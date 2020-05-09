@@ -9,6 +9,7 @@
 
 <link rel="stylesheet" type="text/css" href="public/style.css"> 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
   <title>Best mom out there</title>
@@ -60,18 +61,22 @@
 <div class="img">
 <a href="/"></a>
 
-<img src="mom.jpg"/>
+<img id="firstPhoto" class="clickable" src="mom.jpg"/>
+
+<div id="extraPhotos" class="hidden"> 
 <img src="momimg/2-min.jpg"/></a>
 <img src="momimg/3-min.jpg"/></a>
 <img src="momimg/4-min.jpg"/></a>
+<img src="momimg/1-min.jpg"/></a>
 <img src="momimg/5-min.jpg"/></a>
 <img src="momimg/6-min.jpg"/></a>
 <img src="momimg/7-min.jpg"/></a>
 <img src="momimg/8-min.jpg"/></a>
 <img src="momimg/9-min.jpg"/></a>
 <img src="momimg/10-min.jpg"/></a>
-<img src="momimg/11-min.jpg"/></a>
-<img src="momimg/12-min.jpg"/></a>
+<!-- <img src="momimg/11-min.jpg"/></a>
+ -->
+ <img src="momimg/12-min.jpg"/></a>
 <img src="momimg/13-min.jpg"/></a>
 <img src="momimg/14-min.jpg"/></a>
 <img src="momimg/15-min.jpg"/></a>
@@ -79,6 +84,7 @@
 <img src="momimg/17-min.jpg"/></a>
 <img src="momimg/18-min.jpg"/></a>
 <img src="momimg/19-min.jpg"/></a>
+</div>
 
 
 </div>
@@ -86,5 +92,22 @@
 
 
 </body>
+
+<footer>
+<script>
+
+$( "#firstPhoto" ).click(function() {
+
+    // alert( "Handler for .click() called." );
+
+    $( '#extraPhotos' ).toggleClass( "hidden" );
+
+    $( '#firstPhoto').toggleClass("clicked");
+
+});
+
+
+</script>
+</footer>
 
 </html>

@@ -64,7 +64,7 @@ ul {
   }
 
 
-.img img{
+img{
 
   display: block;
   margin-left: auto;
@@ -72,4 +72,22 @@ ul {
   max-width: 780px;
   max-height: 500px;
 
+}
+
+.hidden {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clicked {
+  max-width: 624px;
+  max-height: 400px;
+
+}
+
+.visible {
+  display: block;
 }
