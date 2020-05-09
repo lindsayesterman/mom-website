@@ -70,15 +70,14 @@
 <img src="momimg/2-min.jpg"/></a>
 <img src="momimg/1-min.jpg"/></a>
 <img src="momimg/5-min.jpg"/></a>
-<img src="momimg/6-min.jpg"/></a>
+<img id="easterEgg1Behind" src="momimg/6-min.jpg"/></a>
 <img src="momimg/7-min.jpg"/></a>
-<img src="momimg/8-min.jpg"/></a>
+<img id="easterEgg3Behind" src="momimg/8-min.jpg"/></a>
 <img src="momimg/9-min.jpg"/></a>
 <img src="momimg/10-min.jpg"/></a>
-<!-- <img src="momimg/11-min.jpg"/></a>
- -->
+<img src="momimg/11-min.jpg"/></a>
  <img src="momimg/12-min.jpg"/></a>
-<img src="momimg/13-min.jpg"/></a>
+<img id="easterEgg2Behind" src="momimg/13-min.jpg"/></a>
 <img src="momimg/14-min.jpg"/></a>
 <img src="momimg/15-min.jpg"/></a>
 <img src="momimg/16-min.jpg"/></a>
@@ -106,6 +105,40 @@ $( "#firstPhoto" ).click(function() {
     $( '#firstPhoto').toggleClass("clicked");
 
 });
+
+
+$("#easterEgg1Behind").hover(function() {
+
+  $(this).attr("src","momimg/fun/easter-egg-1.jpg");
+
+}, function() {
+    $( this ).attr("src","momimg/6-min.jpg");
+  }
+
+)
+
+
+$("#easterEgg2Behind").hover(function() {
+
+  $(this).attr("src","momimg/fun/easter-egg-2.jpg");
+
+}, function() {
+    $( this ).attr("src","momimg/13-min.jpg");
+  }
+
+)
+
+
+
+$("#easterEgg3Behind").hover(function() {
+
+  $(this).attr("src","momimg/fun/easter-egg-3.jpg");
+
+}, function() {
+    $( this ).attr("src","momimg/8-min.jpg");
+  }
+
+)
 
 
 </script>
