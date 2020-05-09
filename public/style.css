@@ -75,6 +75,10 @@ img{
   margin-bottom: 50px;
 }
 
+img#mainImage {
+  max-width: 550px; 
+}
+
 .hidden {
   display: none;
 }
