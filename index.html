@@ -26,7 +26,11 @@
 <body>
   <h1><a href="index.html">TRACY ESTERMAN</a></h1>
 
-<img id="mainImage" src="momimg/17-min.jpg"/></a>
+<img id="mainImage" class="clickable" src="momimg/17-min.jpg"/>
+
+<audio id="song" src="public/audio/song.mp3"  autoplay>
+</audio>
+
 
 
   <div id="introduction">
@@ -81,6 +85,7 @@
 <img src="momimg/1-min.jpg"/></a>
 <img src="momimg/5-min.jpg"/></a>
 <img id="easterEgg1Behind" src="momimg/6-min.jpg"/></a>
+<img src="momimg/winnie-final.png"/></a>
 <img src="momimg/7-min.jpg"/></a>
 <img id="easterEgg3Behind" src="momimg/8-min.jpg"/></a>
 <img src="momimg/9-min.jpg"/></a>
@@ -105,15 +110,30 @@
 <footer>
 <script>
 
-$( "#firstPhoto" ).click(function() {
 
-    // alert( "Handler for .click() called." );
+$( "#mainImage" ).click(function() {
+
+
+    $( '#mainImage').toggleClass("clicked");
+
+    if ($('audio')[0].paused == true) {
+      $('audio')[0].play();
+    } else {
+      $('audio')[0].pause();
+
+    }
+
+});
+
+
+$( "#firstPhoto" ).click(function() {
 
     $( '#extraPhotos' ).toggleClass( "hidden" );
 
     $( '#firstPhoto').toggleClass("clicked");
 
 });
+
 
 
 $("#easterEgg1Behind").hover(function() {
