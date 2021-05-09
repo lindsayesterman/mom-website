@@ -1,71 +1,59 @@
-*{
-
-font-family: 'Source Sans Pro', sans-serif;
-
-
- }   
-
-body{ 
-
-background-color: #D1BFD8;
-
- }
-
-h1{
-
-margin-top: 50px;
-text-align: center;
-color: #4B0082;
-margin-bottom: 30px;
-
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  background-color: #d1bfd8;
 }
 
-h2{
- 
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 30px;
+}
+
+h2 {
   text-align: center;
   color: #800080;
 }
 
-h3{ 
+h3 {
+  color: #800080;
+  text-align: center;
+}
 
-color: #800080;
-text-align: center;
-
- }
-
-
-a {
-  text-decoration: none; 
+a.name {
+  text-decoration: none;
   color: black;
 }
 
-p{
+a.name:hover {
+  text-decoration: underline;
+}
+
+p {
   text-align: center;
   margin-left: 80px;
   margin-right: 80px;
-
 }
 
-
 ul {
-  width: 8%; 
-  margin: auto; 
+  width: 8%;
+  margin: auto;
   font-size: 1.2em;
-  list-style-position: : inside; 
+  list-style-position: inside;
   text-align: left;
-  }
+}
 
-  ol{
-  width: 15%; 
-  margin: auto; 
+ol {
+  width: 15%;
+  margin: auto;
   font-size: 1.2em;
-  list-style-position: : inside; 
+  list-style-position: inside;
   text-align: left;
-  }
+}
 
-
-img{
-
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -86,18 +74,21 @@ img{
 
 .clickable:hover {
   transition: 0.6s;
-  -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
-
+  -webkit-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
 .clicked {
   max-width: 624px;
   max-height: 400px;
-
 }
 
 .visible {
   display: block;
+}
+
+a.year {
+  text-decoration: underline;
+  color:#4b0082;
 }
