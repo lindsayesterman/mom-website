@@ -13,6 +13,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
+<link rel="manifest" href="public/favicon/site.webmanifest">
+
 
   <title>Best mom out there</title>
 
@@ -20,6 +25,13 @@
 
 <body>
   <h1><a href="index.html">TRACY ESTERMAN</a></h1>
+
+<img id="mainImage" class="clickable" src="momimg/17-min.jpg"/>
+
+<audio id="song" src="public/audio/song.mp3" >
+</audio>
+
+
 
   <div id="introduction">
     <h2>About my mom:</h2>
@@ -72,19 +84,18 @@
 <img src="momimg/2-min.jpg"/></a>
 <img src="momimg/1-min.jpg"/></a>
 <img src="momimg/5-min.jpg"/></a>
-<img src="momimg/6-min.jpg"/></a>
+<img id="easterEgg1Behind" src="momimg/6-min.jpg"/></a>
+<img src="momimg/winnie-final.png"/></a>
 <img src="momimg/7-min.jpg"/></a>
-<img src="momimg/8-min.jpg"/></a>
+<img id="easterEgg3Behind" src="momimg/8-min.jpg"/></a>
 <img src="momimg/9-min.jpg"/></a>
 <img src="momimg/10-min.jpg"/></a>
-<!-- <img src="momimg/11-min.jpg"/></a>
- -->
+<img src="momimg/11-min.jpg"/></a>
  <img src="momimg/12-min.jpg"/></a>
-<img src="momimg/13-min.jpg"/></a>
+<img id="easterEgg2Behind" src="momimg/13-min.jpg"/></a>
 <img src="momimg/14-min.jpg"/></a>
 <img src="momimg/15-min.jpg"/></a>
 <img src="momimg/16-min.jpg"/></a>
-<img src="momimg/17-min.jpg"/></a>
 <img src="momimg/18-min.jpg"/></a>
 <img src="momimg/19-min.jpg"/></a>
 </div>
@@ -99,15 +110,64 @@
 <footer>
 <script>
 
-$( "#firstPhoto" ).click(function() {
 
-    // alert( "Handler for .click() called." );
+$( "#mainImage" ).click(function() {
+
+
+    $( '#mainImage').toggleClass("clicked");
+
+    if ($('audio')[0].paused == true) {
+      $('audio')[0].play();
+    } else {
+      $('audio')[0].pause();
+
+    }
+
+});
+
+
+$( "#firstPhoto" ).click(function() {
 
     $( '#extraPhotos' ).toggleClass( "hidden" );
 
     $( '#firstPhoto').toggleClass("clicked");
 
 });
+
+
+
+$("#easterEgg1Behind").hover(function() {
+
+  $(this).attr("src","momimg/fun/easter-egg-1.jpg");
+
+}, function() {
+    $( this ).attr("src","momimg/6-min.jpg");
+  }
+
+)
+
+
+$("#easterEgg2Behind").hover(function() {
+
+  $(this).attr("src","momimg/fun/easter-egg-2.jpg");
+
+}, function() {
+    $( this ).attr("src","momimg/13-min.jpg");
+  }
+
+)
+
+
+
+$("#easterEgg3Behind").hover(function() {
+
+  $(this).attr("src","momimg/fun/easter-egg-3.jpg");
+
+}, function() {
+    $( this ).attr("src","momimg/8-min.jpg");
+  }
+
+)
 
 
 </script>
