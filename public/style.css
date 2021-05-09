@@ -93,7 +93,7 @@ img#mainImage {
   display: block;
 }
 
-a.year {
+a.year, a{
   text-decoration: underline;
   color:#4b0082;
 }
